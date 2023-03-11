@@ -1,26 +1,38 @@
-@media screen and (min-width: 767px) {
-    .header{
+@media screen and (max-width: 767px) {
+    .wrapper{
         width: 250px;
+    }
+    .headder{
+        width: 100%;
     }
     .right{
         width: 100px;
     }
     .footer{
-        width: 250px;
+        width: 100%;
     }
 }
 
-@media  screen and (min-width: 479px) {
-    .header{
-        width: 150px;
-    }    
-    .right{
+@media  screen and (max-width: 479px) {
+    .wrapper{
         width: 150px;
     }
-    .footer{
-        width: 150px;
+    .headder{
+        width: 100%;
     }
     .contents{
+        height: 500px;
+    }
+       
+    .left{
         float: none;
     }
+    .right{
+        float: none;
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    
+    
 }
