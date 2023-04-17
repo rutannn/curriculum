@@ -5,8 +5,8 @@ import constants.Constants;
 
 public class Main {
     
-    private String firstName = "長谷川";
-    private String lastName = "瑠香"; 
+    private  static String firstName = "長谷川";
+    private  static String lastName = "瑠香"; 
    
     
     //printNameメソッド
@@ -17,7 +17,7 @@ public class Main {
     
     public static void main(String[] args) {
         
-        printName("長谷川", "瑠香");
+        printName(firstName, lastName);
              
         //Petクラスインスタンス化
        Pet pet = new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);
