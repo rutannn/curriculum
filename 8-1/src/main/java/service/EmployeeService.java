@@ -17,7 +17,7 @@ import bean.EmployeeBean;
  
 public class EmployeeService {
  
-  // 問① 接続情報を記述してください
+  // 問① 接続情報を記述してください　
  /** ドライバーのクラス名 */
  private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
  /** ・JDBC接続先情報 */

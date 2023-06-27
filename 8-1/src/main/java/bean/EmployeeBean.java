@@ -1,4 +1,4 @@
-package bean;
+package bean; 
 /**
  * ・社員情報データ（モデル）
  */
