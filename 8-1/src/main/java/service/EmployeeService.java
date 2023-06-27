@@ -31,7 +31,7 @@ public class EmployeeService {
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "UPDATE Employee_table SET id=? ,password=? ";
+ private static final String SQL_UPDATE = "UPDATE Employee_table SET login_time=? ,id=? ";
  
   // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
  /** ・SQL SELECT文 */
