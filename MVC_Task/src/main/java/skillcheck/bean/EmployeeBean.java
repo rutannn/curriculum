@@ -8,7 +8,7 @@ package skillcheck.bean;
  */
 public final class EmployeeBean {
 
-    // FIXME Step-1-1: 以下に社員情報として不足しているフィールド変数、セッター、ゲッターを記述しなさい。
+    // FIXME 済Step-1-1: 以下に社員情報として不足しているフィールド変数、セッター、ゲッターを記述しなさい。
     // Tips: 社員情報テーブルの内容を確認
 
     /** ・社員番号 */

@@ -16,6 +16,7 @@ import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
+import skillcheck.service.EmployeeManagementService;
 import skillcheck.util.RequestTypeUtil;
 import skillcheck.util.RequestTypeUtil.RequestType;
 
@@ -42,8 +43,9 @@ public final class EmployeeManagementController extends BaseServlet {
 
         // FIXME Step-4-1: 社員情報管理サービスのインスタンスを生成しなさい。
         // Tips: 定義済みフィールド変数を使用
+        //メモ：インスタンス生成　クラス名 インスタンス名 = new クラス名();
         // [ここへ記述]
-
+        EmployeeManagementService【インスタンス名】  = new EmployeeManagementService();
         boolean hasSession = false;
 
         try {
@@ -114,9 +116,9 @@ public final class EmployeeManagementController extends BaseServlet {
 
         // リクエストより社員番号を取得（※削除時は複数の可能性あり）: 関数型インターフェース（ラムダ式）
         Function<HttpServletRequest, List<String>> rmdGetEmpIdList = (rmdRequest) -> {
-            // FIXME Step-4-2: 各jspよりPOSTで送信されたリクエストパラメーターの社員番号を取得しなさい。
+            // FIXME 済Step-4-2: 各jspよりPOSTで送信されたリクエストパラメーターの社員番号を取得しなさい。
             // Tips: jsp側のname属性と一致させること
-            final String pEmpId = "[ここへ記述]";
+            final String pEmpId = "empId";
             return Arrays.asList(pEmpId);
         };
         /* 関数型インターフェース（ラムダ式）- END */
@@ -136,7 +138,10 @@ public final class EmployeeManagementController extends BaseServlet {
 
             // FIXME Step-4-3: 社員情報管理サービスのインスタンス変数を生成しなさい。
             // Tips: 定義済みフィールド変数を使用
+            //メモ：インスタンス変数→型　変数名　で情報入ってないやつ 
+            //定義→変数に具体的に数値入れる、フィールド変数→修飾子つくクラス内なら使えるやつ　
             // [ここへ記述]
+          
 
             reqEmpIdList = rmdGetEmpIdList.apply(request);
             reqEmpIdList.forEach(id -> Logger.log(new Throwable(), "reqEmpId = " + id));
@@ -162,10 +167,13 @@ public final class EmployeeManagementController extends BaseServlet {
             Logger.log(new Throwable(), "reqStatus  = " + this.responseBean.getRequestStaus());
             Logger.log(new Throwable(), "reqMessage = " + this.responseBean.getMessage());
 
-            // FIXME Step-4-4: 取得結果（ResponseBean）をjspへ渡すための処理を記述しなさい。
+            // FIXME 済Step-4-4: 取得結果（ResponseBean）をjspへ渡すための処理を記述しなさい。
             // Tips1: リクエストへレスポンス情報をセット
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
+            //(メモ)キー名＝属性名  request.setAttribute(属性名,インスタンス);
             // [ここへ記述]
+            request.setAttribute("CONST_REQUST_KEY_FOR_RESPONSE_BEAN", this.responseBean);
+
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
 

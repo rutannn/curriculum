@@ -20,10 +20,10 @@ public final class ConstSQL {
     /** パスワード */
     public static final String JDBC_POSTGRES_PASS = "postgres";
 
-    // FIXME Step-2: 以下のSELECT文、INSERT文、UPDATE文を記述しなさい
+    // FIXME 済Step-2: 以下のSELECT文、INSERT文、UPDATE文を記述しなさい
     // Tips: 更新値や条件値には「?」を使用してください
 
-    // FIXME Step-2-1: [SQL-SELECT] 社員情報テーブルより、作成日時、更新日時、削除フラグを除いたカラムを取得するクエリを作成しなさい。
+    // FIXME 済Step-2-1: [SQL-SELECT] 社員情報テーブルより、作成日時、更新日時、削除フラグを除いたカラムを取得するクエリを作成しなさい。
     /** 社員情報一覧取得用クエリ: 取得カラム + 取得元テーブル */
     public static final String SELECT_BASE = "SELECT EmpId,Password, Name,Mail,ProgramingLanguage,Comment  FROM Employee";
     /** 社員情報一覧取得用クエリ: 削除されていない社員情報を社員番号順に取得 */
