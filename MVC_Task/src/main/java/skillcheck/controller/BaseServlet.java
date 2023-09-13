@@ -17,6 +17,7 @@ import skillcheck.logger.Logger;
 import skillcheck.service.EmployeeManagementService;
 import skillcheck.util.PasswordHashUtil;
 
+
 /**
  * サーブレット: 親クラス
  *
@@ -152,6 +153,9 @@ public abstract class BaseServlet extends HttpServlet {
             // ←ここへ記述
             //さっきのやつから持ってくる　getEmployeeDataに　FIND_BY_EMPIDを持ってくる
             //インスタンス化してから使う　社員番号　引数にする
+            //社員情報管理サービスは　EmployeeManagementControllerでemsにしてる
+            
+            ems.getEmployeeData(FIND_BY_EMPID, resEmployeeBean);
             
             
 
