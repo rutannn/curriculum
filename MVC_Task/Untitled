@@ -1,0 +1,44 @@
+情報: Serverのバージョン名:     Apache Tomcat/9.0.73 [水 9月 13 11:08:25 JST 2023]
+情報: Server ビルド:            Feb 27 2023 15:33:40 UTC [水 9月 13 11:08:25 JST 2023]
+情報: サーバーのバージョン番号: 9.0.73.0 [水 9月 13 11:08:25 JST 2023]
+情報: OS 名:                    Mac OS X [水 9月 13 11:08:25 JST 2023]
+情報: OS バージョン:            13.4 [水 9月 13 11:08:25 JST 2023]
+情報: アーキテクチャ:           x86_64 [水 9月 13 11:08:25 JST 2023]
+情報: Java Home:                /Applications/Eclipse_2023-03.app/Contents/java/17/Home [水 9月 13 11:08:25 JST 2023]
+情報: JVM バージョン:           17.0.6+10 [水 9月 13 11:08:25 JST 2023]
+情報: JVM ベンダ:               Eclipse Adoptium [水 9月 13 11:08:25 JST 2023]
+情報: CATALINA_BASE:            /Users/r./LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp4 [水 9月 13 11:08:25 JST 2023]
+情報: CATALINA_HOME:            /Applications/Eclipse_2023-03.app/Contents/tomcat/9 [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       -Dcatalina.base=/Users/r./LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp4 [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       -Dcatalina.home=/Applications/Eclipse_2023-03.app/Contents/tomcat/9 [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       -Dwtp.deploy=/Users/r./LetsEngineer/curriculum/.metadata/.plugins/org.eclipse.wst.server.core/tmp4/wtpwebapps [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       -Dfile.encoding=UTF-8 [水 9月 13 11:08:25 JST 2023]
+情報: コマンドライン引数:       -XX:+ShowCodeDetailsInExceptionMessages [水 9月 13 11:08:25 JST 2023]
+情報: 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/r./Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。 [水 9月 13 11:08:25 JST 2023]
+情報: プロトコルハンドラ ["http-nio-8080"] を初期化します。 [水 9月 13 11:08:25 JST 2023]
+情報: サーバーの初期化 [641] ミリ秒 [水 9月 13 11:08:25 JST 2023]
+情報: サービス [Catalina] を起動します [水 9月 13 11:08:25 JST 2023]
+情報: サーブレットエンジンの起動：[Apache Tomcat/9.0.73] [水 9月 13 11:08:25 JST 2023]
+情報: 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。 [水 9月 13 11:08:26 JST 2023]
+情報: プロトコルハンドラー ["http-nio-8080"] を開始しました。 [水 9月 13 11:08:26 JST 2023]
+情報: サーバーの起動 [410] ミリ秒 [水 9月 13 11:08:26 JST 2023]
+[MEMORY:43478288][2023/09/13 11:08:27.044] [org.apache.jsp.login_jsp] [_jspService] [161] セッションなし
+[MEMORY:45575440][2023/09/13 11:08:37.344] [skillcheck.controller.BaseServlet] [<init>] [55] START
+[MEMORY:45575440][2023/09/13 11:08:37.346] [skillcheck.controller.BaseServlet] [<init>] [59] END
+[MEMORY:45575440][2023/09/13 11:08:37.348] [skillcheck.controller.EmployeeManagementController] [doPost] [100] START
+[MEMORY:45575440][2023/09/13 11:08:37.349] [skillcheck.controller.EmployeeManagementController] [getRequestType] [203] START
+[MEMORY:45575440][2023/09/13 11:08:37.350] [skillcheck.controller.EmployeeManagementController] [getRequestType] [206] requestTypeName = login
+[MEMORY:45575440][2023/09/13 11:08:37.350] [skillcheck.controller.EmployeeManagementController] [getRequestType] [225] this.responseBean = skillcheck.bean.ResponseBean@66aeade5
+[MEMORY:45575440][2023/09/13 11:08:37.351] [skillcheck.controller.EmployeeManagementController] [getRequestType] [235] END
+[MEMORY:45575440][2023/09/13 11:08:37.351] [skillcheck.controller.EmployeeManagementController] [doPost] [129] RequestType = LOGIN
+[MEMORY:45575440][2023/09/13 11:08:37.352] [skillcheck.controller.EmployeeManagementController] [lambda$1] [148] reqEmpId = grs
+[MEMORY:45575440][2023/09/13 11:08:37.352] [skillcheck.controller.EmployeeManagementController] [doPost] [153] --- ログイン ---
+[MEMORY:45575440][2023/09/13 11:08:37.352] [skillcheck.controller.EmployeeManagementController] [doPost] [168] reqStatus  = 0
+[MEMORY:45575440][2023/09/13 11:08:37.352] [skillcheck.controller.EmployeeManagementController] [doPost] [169] reqMessage = null
+[MEMORY:45575440][2023/09/13 11:08:37.353] [skillcheck.controller.EmployeeManagementController] [doPost] [179] 遷移先 = null
+重大: サーブレット [employee] のServlet.service()が例外を投げました [水 9月 13 11:08:37 JST 2023]
