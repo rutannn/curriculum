@@ -12,10 +12,12 @@ import javax.servlet.http.HttpSession;
 import skillcheck.bean.EmployeeBean;
 import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
+import skillcheck.dao.EmployeeDao.ExecuteCase;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
 import skillcheck.service.EmployeeManagementService;
 import skillcheck.util.PasswordHashUtil;
+
 
 
 /**
@@ -154,8 +156,8 @@ public abstract class BaseServlet extends HttpServlet {
             //さっきのやつから持ってくる　getEmployeeDataに　FIND_BY_EMPIDを持ってくる
             //インスタンス化してから使う　社員番号　引数にする
             //社員情報管理サービスは　EmployeeManagementControllerでemsにしてる
-            
-            ems.getEmployeeData(FIND_BY_EMPID, resEmployeeBean);
+            EmployeeBean eb = new EmployeeBean(reqEmpId); 
+            ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, eb);
             
             
 

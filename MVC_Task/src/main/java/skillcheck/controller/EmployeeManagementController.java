@@ -45,7 +45,7 @@ public final class EmployeeManagementController extends BaseServlet {
         // Tips: 定義済みフィールド変数を使用
         //メモ：インスタンス生成　クラス名 インスタンス名 = new クラス名();
         // [ここへ記述]
-        EmployeeManagementService ems  = new EmployeeManagementService();
+        ems  = new EmployeeManagementService();
         boolean hasSession = false;
 
         try {
@@ -142,7 +142,7 @@ public final class EmployeeManagementController extends BaseServlet {
             //メモ：インスタンス変数→型　変数名　で情報入ってないやつ 
             //定義→変数に具体的に数値入れる、フィールド変数→修飾子つくクラス内なら使えるやつ　
             // [ここへ記述]
-            EmployeeManagementService ems;
+            ems  = new EmployeeManagementService();
 
             reqEmpIdList = rmdGetEmpIdList.apply(request);
             reqEmpIdList.forEach(id -> Logger.log(new Throwable(), "reqEmpId = " + id));

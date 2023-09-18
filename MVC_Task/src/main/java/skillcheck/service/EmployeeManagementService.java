@@ -74,7 +74,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
         List<EmployeeBean> empResultList = new ArrayList<>(0);
 
         try {
-            // FIXME Step-5-2: executeGetConnection()内を修正
+            // FIXME 済Step-5-2: executeGetConnection()内を修正
             // MEMO: Windowsは【control】、Macは【command】を押下しながらクリックすることでメソッド定義へジャンプ可能
             //メモ：（）内？？
             super.executeGetConnection();
@@ -107,15 +107,25 @@ public final class EmployeeManagementService extends BaseService implements Empl
                         this.resultSet.getString("mail"),
                         this.resultSet.getString("programingLanguage"),
                         this.resultSet.getString("comment"));
-                
+               //この７こは引数
                 //ゲットしたぶんセットする！
-                employeeBean.setEmpId("empId");
-                employeeBean.setPassword("password");
-                employeeBean.setNane("name");
-                employeeBean.setMail("mail");
-                employeeBean.setProgramingLanguage("programingLanguage");
-                employeeBean.setComment("comment");
-                
+               /*
+                String empId = this.resultSet.getString("empId");
+                String password = this.resultSet.getString("password");
+                String name = this.resultSet.getString("name");
+                String mail = this.resultSet.getString("mail");
+                String programingLanguage = this.resultSet.getString("programingLanguage");
+                String comment = this.resultSet.getString("comment");
+                */
+               
+               /*
+                employeeBean.setEmpId(empId);
+                employeeBean.setPassword(password);
+               employeeBean.setNane(name);
+               employeeBean.setMail(mail);
+               employeeBean.setProgramingLanguage(programingLanguage);
+                employeeBean.setComment(comment);
+                */
 
                 // 社員情報リストへ追加
                 empResultList.add(employeeBean);
@@ -201,8 +211,10 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // [ここへ記述]
                 //（メモ）拡張for文？for (型 変数名: 配列名もしくはコレクション名)
                 //pEmployeeBeanListにempに代入する　ログに吐き出されるようになってる
-                for (EmployeeBean list : pEmployeeBeanList) {
-                   emp = list;
+                
+                
+                for (int i = 0; i<pEmployeeBeanList.size(); i++) {
+                    emp = pEmployeeBeanList.get(i); 
                 }
 
                 if (Objects.nonNull(emp)) {
