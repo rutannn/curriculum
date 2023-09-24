@@ -157,6 +157,7 @@ public abstract class BaseServlet extends HttpServlet {
             //インスタンス化してから使う　社員番号　引数にする
             //社員情報管理サービスは　EmployeeManagementControllerでemsにしてる
             EmployeeBean eb = new EmployeeBean(reqEmpId); 
+            
             ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, eb);
             
             
