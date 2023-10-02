@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import skillcheck.bean.EmployeeBean;
 import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
 import skillcheck.constant.ConstSQL;
@@ -143,7 +142,5 @@ public abstract class BaseService {
         this.reqMessage = message;
         Logger.log(e);
     }
-
-    protected abstract void EmployeeBean(EmployeeBean employeeBean);
 
 }

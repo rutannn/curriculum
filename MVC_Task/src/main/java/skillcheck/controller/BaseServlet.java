@@ -158,17 +158,19 @@ public abstract class BaseServlet extends HttpServlet {
             //社員情報管理サービスは　EmployeeManagementControllerでemsにしてる
             EmployeeBean eb = new EmployeeBean(reqEmpId); 
             
-            ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, eb);
+            responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, eb);
             
             
 
             // 最初の1件を取得
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
-
+           
             if (Objects.nonNull(resEmployeeBean)) {
                 // パスワードチェック
                 final String hashPassword = PasswordHashUtil.getSafetyPassword(reqPassword, reqEmpId);
+             
                 if (resEmployeeBean.getPassword().equals(hashPassword)) {
+           
                     // ログイン成功
                     this.destinationTarget = CONST_DESTINATION_RESULT_JSP;
                     message = ConstMessage.SUCCESS_LOGIN;

@@ -107,7 +107,8 @@ public final class EmployeeManagementService extends BaseService implements Empl
                         this.resultSet.getString("programingLanguage"),
                         this.resultSet.getString("comment"));
                 
-                //上のと同じとこどうにかしたい
+                
+                //上のと同じになっているところをどうにかしたい
                 employeeBean.setEmpId(this.resultSet.getString("empId"));
                 employeeBean.setPassword(this.resultSet.getString("password"));
                 employeeBean.setNane(this.resultSet.getString("name"));
@@ -200,8 +201,6 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 // Tips2: 格納先はローカル変数のempとすること
                 // [ここへ記述]
                 
-           
-                
                 for (int i = 0; i<1; i++) {
                     emp = pEmployeeBeanList.get(i); 
                 }
@@ -258,10 +257,5 @@ public final class EmployeeManagementService extends BaseService implements Empl
         Logger.logEnd(new Throwable());
     }
 
-    @Override
-    protected void EmployeeBean(skillcheck.bean.EmployeeBean employeeBean) {
-        // TODO 自動生成されたメソッド・スタブ
-        
-    }
 }
 
